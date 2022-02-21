@@ -1,9 +1,14 @@
 from tkinter import *
+import dividend
 
 window = Tk()
+window.title("Dividend calculator")
 
 def dividend_amount():
-    total_div = float(e9_value.get())*float(e10_value.get())
+
+    symbol = str(e10_value.get())
+
+    total_div = float(e9_value.get())*dividend.get_div_value(symbol)
 
     total_div_wo_tax = total_div * (1-float(e11_value.get())*0.01)
 
@@ -26,7 +31,7 @@ def dividend_amount():
 
 # Create the Label widgets
 e1 = Label(window, text = "Enter the amount oh shares")
-e2 = Label(window, text = "Enter the dividend payout")
+e2 = Label(window, text = "Enter the stock symbol")
 e3 = Label(window, text = "Enter the tax rate")
 e4 = Label(window, text = "Enter the dividend frequency")
 
