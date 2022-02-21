@@ -36,9 +36,9 @@ e3 = Label(window, text = "Enter the tax rate")
 e4 = Label(window, text = "Enter the dividend frequency")
 
 e5 = Label(window, text = "Total amount of dividend")
-e6 = Label(window, text = "Total amount of dividend without tax")
+e6 = Label(window, text = "Total amount of dividend after tax")
 e7 = Label(window, text = "Total amount of dividend per year")
-e8 = Label(window, text = "Total amount of dividend per year without tax")
+e8 = Label(window, text = "Total amount of dividend per year after tax")
 
 e9_value = StringVar()
 e9 = Entry(window, textvariable = e9_value)
