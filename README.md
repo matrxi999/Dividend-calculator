@@ -1,1 +1,1 @@
-Dividend Calculator with API
+API, Requests, tkinter
